@@ -1,0 +1,31 @@
+<head>
+  <title>keyboard-fail</title>
+</head>
+
+<body>
+  <h1>Ionic Keyboard Issue</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h3>Reproduction Steps</h3>
+  <ul>
+    <li>Focus the following Input field</li>
+    <li>Type some stuff</li>
+    <li>Press the return button on the keyboard</li>
+    <li>Close the keyboard manually</li>
+    <li>Press anywhere on the screen to make the keyboard appear</li>
+  </ul>
+
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  {{#if showInput}}
+  <form id="my-form" >
+  <input id="email" type="email" placeholder="Email">
+  </form>
+  
+  {{/if}}
+</template>
+
